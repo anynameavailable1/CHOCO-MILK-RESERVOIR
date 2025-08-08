@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Press F</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding-top: 100px;
+    }
+
+    #message {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="message">Press F to pay respects.</div>
+
+  <script>
+    document.addEventListener("keydown", function(event) {
+      if (event.key === "f" || event.key === "F") {
+        // Replace the message
+        document.getElementById("message").innerText = "YOU JUST GOT RICKROLLED 😎";
+
+        // Optional: Redirect to Rickroll after delay
+        setTimeout(function() {
+          window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+        }, 200); // 2 second delay
+      }
+    });
+  </script>
+
+</body>
+</html>
+
+
